@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="31" time="0.453">
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by cocktail name" time="0.013">
+        <system-out>
+            <![CDATA[When User search for cocktail input "Margarita".............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by cocktail name 2" time="0">
+        <system-out>
+            <![CDATA[When User search for cocktail input "Old Fashioned".........................passed
+Then User should be able to search for cocktail status code "200"...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by cocktail name 3" time="0.001">
+        <system-out>
+            <![CDATA[When User search for cocktail input "Negroni"...............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If the cocktail does not exist in the cocktail DB, the API shall return drinks as null" time="0">
+        <system-out>
+            <![CDATA[When User search for cocktail input "Margariii".............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "drinks" searched should return null...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Searching for a cocktail by name is case-insensitive" time="0">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then User search for cocktail input "margarita".............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Two searches should be the same "Margarita" "margarita"................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties" time="0.002">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strDrink" that is "String"................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 2" time="0.001">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strTags" that is "String".................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 3" time="0">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strCategory" that is "String".............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 4" time="0">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strAlcoholic" that is "String"............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 5" time="0">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strGlass" that is "String"................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 6" time="0.001">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "strCreativeCommonsConfirmed" that is "String".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="API response must contain the certain Schema properties 7" time="0">
+        <system-out>
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then "0" response should contain "dateModified" that is "String"............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name" time="0.001">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Vodka"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name 2" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Gin".................................passed
+Then User should be able to search for ingredient status code "200".........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name 3" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Whiskey".............................passed
+Then User should be able to search for ingredient status code "200".........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name and return following field" time="0.001">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Vodka"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "idIngredient" that is "String"............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name and return following field 2" time="0.001">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Gin".................................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strType" that is "String".................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="The system shall include a method to search by ingredient name and return following field 3" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Whiskey".............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strDescription" that is "String"..........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null" time="0.001">
+        <system-out>
+            <![CDATA[When User search for ingredient input "water"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns no "ABV" should return null....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null 2" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "water"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns no "ABV" should return null....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null 3" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "water"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns no "ABV" should return null....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null 4" time="0.001">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Vodka"...............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns yes "ABV" should return "String"...............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null 5" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Whiskey".............................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns yes "ABV" should return "String"...............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="If an ingredient is non-alcoholic, Alcohol is null and ABV is null 6" time="0">
+        <system-out>
+            <![CDATA[When User search for ingredient input "Gin".................................passed
+Then User should be able to search for ingredient status code "200".........passed
+Then "0" response should contain "strAlcohol" that is "String"..............passed
+Then If "strAlcohol" returns yes "ABV" should return "String"...............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search" time="0.002">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 2" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 3" time="0.001">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 4" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 5" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 6" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="API Search Functionality" name="Search returns all cocktail in search 7" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User search for cocktail input "Margarita"............................passed
+Then User should be able to search for cocktail status code "200"...........passed
+Then Search should return all related drinks "strDrink".....................undefined
+]]>
+        </failure>
+    </testcase>
+</testsuite>
